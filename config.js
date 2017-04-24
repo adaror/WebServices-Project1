@@ -5,6 +5,8 @@
 module.exports = {
     events : {
         medalChange : "Amount of medals has been changed",
-        basketsChange: "Amount of baskets has been changed"
+        basketsChange: "Amount of baskets has been changed",
+        lowMedals: "Medals cannot be negative",
+        medalsRemove:"Medals removed"
     }
 }

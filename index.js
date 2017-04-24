@@ -2,12 +2,19 @@
  * Created by adaror on 22/04/2017.
  */
 var player = require("./player");
-var eventConfig = require("./config").events;
+var http = require("http");
 
-var player1 = new player('Arik');
-var player2 = new player('Or');
-player1.addMedals(5);
-player1.addBaskets(50);
-player2.addBaskets(15);
-player2.addBaskets(20);
+http.createServer(function(req,res){
+    var player1 = new player.instance('Arik');
+    player1.addMedals(5);
+    player1.addBaskets(14);
+    player1.removeMedals(3);
+    player1.removeMedals(6);
+    res.writeHeader(200,{'Content-type':'text/plain'});
+    res.write(player.messages);
+    res.end();
+}).listen(8088);
+
+console.log('Listening on port 8088...');
+
 
