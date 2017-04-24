@@ -7,6 +7,8 @@ module.exports = {
         medalChange : "Amount of medals has been changed",
         basketsChange: "Amount of baskets has been changed",
         lowMedals: "Medals cannot be negative",
-        medalsRemove:"Medals removed"
+        medalsRemove:"Medals removed",
+        lowBaskets:"Baskets cannot be negative",
+        basketsRemove:"Baskets removed"
     }
 }
