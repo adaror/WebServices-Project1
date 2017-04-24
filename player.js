@@ -61,5 +61,5 @@ myEmtr.on(eventConfig.medalsRemove,function(remMedals,name,medals){
     console.log(`${remMedals} medals has been removed from ${name}`);
    mes += `${remMedals} medals has been remove from ${name},now there are ${medals} medals
 `;
-    exports.messages = mes;
+    exports.messages = mes; // export the new message
 });
