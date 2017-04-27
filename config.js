@@ -1,7 +1,7 @@
 /**
  * Created by adaror on 21/04/2017.
  */
-
+//events emitter strings
 module.exports = {
     events : {
         medalChange : "Amount of medals has been changed",
